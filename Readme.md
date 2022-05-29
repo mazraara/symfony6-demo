@@ -10,11 +10,10 @@ Open terminal:
  - Run: `docker-compose up -d`
  - Run: `docker-compose exec php /bin/bash`
  - Run: `composer install`
+ - Run: `symfony console doctrine:database:create`
  - Run: `symfony console doctrine:migrations:migrate`
-
-Now application available in browser - http://symfony-local.test/  
-
-
+ - Run: `symfony console doctrine:schema:update --force`
+ 
 Run unit tests:
 - Run: `docker-compose exec php /bin/bash`
 - Run: `php bin/phpunit tests`
